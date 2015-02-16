@@ -1,0 +1,29 @@
+{
+  "name": "rest-server",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rorysterley/rest-server.git"
+  },
+  "author": "Rory Sterley <rorysterley@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rorysterley/rest-server/issues"
+  },
+  "homepage": "https://github.com/rorysterley/rest-server",
+  "devDependencies": {
+    "chai": "^2.0.0",
+    "chai-http": "^1.0.0",
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-jshint": "^0.11.0",
+    "grunt-simple-mocha": "^0.4.0",
+    "jshint": "^2.6.0",
+    "mocha": "^2.1.0"
+  }
+}
