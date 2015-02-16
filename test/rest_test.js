@@ -63,15 +63,14 @@ describe('The server', function() {
       });
   });
 
-
-  // it('should DELETE ', function(done) {
-  //   chai.request('localhost:3000')
-  //     .del('/file1.json')
-  //     .end(function(err, res) {
-  //       expect(err).to.eql(null);
-  //       // expect(res).to.have.status(200);
-  //       // expect(fs.readFileSync('./db/file1.json')).not.to.exist();
-  //       done();
-  //     });
-  // });
+  it('should DELETE ', function(done) {
+    chai.request('localhost:3000')
+      .delete('/file1.json')
+      .send()
+      .end(function(err, res) {
+        expect(err).to.eql(null);
+        expect(res).to.have.status(200);
+        done();
+      });
+  });
 });
