@@ -21,7 +21,7 @@ describe('The server', function() {
 
   it('should GET ', function(done) {
     chai.request('localhost:3000')
-      .get('/file1.json')
+      .get('/db/file1.json')
       .end(function(err, res) {
         expect(err).to.eql(null);
         expect(res).to.have.status(200);
@@ -32,7 +32,7 @@ describe('The server', function() {
 
   it('should PUT ', function(done) {
     chai.request('localhost:3000')
-      .put('/file1.json')
+      .put('/db/file1.json')
       .send({"PUT": "did this"})
       .end(function(err, res) {
         expect(err).to.eql(null);
@@ -43,7 +43,7 @@ describe('The server', function() {
 
   it('should POST ', function(done) {
     chai.request('localhost:3000')
-      .post('/file2.json')
+      .post('/db/file2.json')
       .send({"POST": "did this"})
       .end(function(err, res) {
         expect(err).to.eql(null);
@@ -54,7 +54,7 @@ describe('The server', function() {
 
   it('should PATCH ', function(done) {
     chai.request('localhost:3000')
-      .patch('/file2.json')
+      .patch('/db/file2.json')
       .send({"PATCH": "did this"})
       .end(function(err, res) {
         expect(err).to.eql(null);
@@ -65,7 +65,7 @@ describe('The server', function() {
 
   it('should DELETE ', function(done) {
     chai.request('localhost:3000')
-      .delete('/file1.json')
+      .delete('/db/file1.json')
       .send()
       .end(function(err, res) {
         expect(err).to.eql(null);

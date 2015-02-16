@@ -14,16 +14,16 @@ server.start takes an optional port number (3000) by default.
 REST requests
 -------------
 CRUD requests made to the server should be of the form:<br>
-localhost:3000/fileIAmInterestedIn.json
+localhost:3000/PathToSaveIn/fileIAmInterestedIn.json
 
 
 Using superagent:
 ```
-$ superagent get localhost:3000/testfiel.json
-$ superagent post localhost:3000/testfiel.json
-$ superagent patch localhost:3000/testfiel.json
-$ superagent put localhost:3000/testfiel.json
-$ superagent delete localhost:3000/testfiel.json
+$ superagent get localhost:3000/path/testfiel.json
+$ superagent post localhost:3000/path/testfiel.json
+$ superagent patch localhost:3000/path/testfiel.json
+$ superagent put localhost:3000/path/testfiel.json
+$ superagent delete localhost:3000/path/testfiel.json
 ```
 
 
